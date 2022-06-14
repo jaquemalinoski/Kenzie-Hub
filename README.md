@@ -13,5 +13,13 @@ https://react-entrega-s2-kenzie-hub-jaquemalinoski.vercel.app/
 
 # Tecnologias / Bibliotecas Utilizadas
 
-- HTML5 - CSS3 - JavaScript - React - Styled-Components - React Hook Form - Yup - React Router Dom - React Toastfy
+- HTML5 
+- CSS3 
+- JavaScript 
+- React 
+- Styled-Components 
+- React Hook Form 
+- Yup 
+- React Router Dom 
+- React Toastfy
 
