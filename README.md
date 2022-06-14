@@ -1,4 +1,4 @@
-# Kenzie-Hub
+# :rocket: Kenzie-Hub
 
 ![alt text](https://i.ibb.co/1YVd9QY/2.png)
 ![alt text](https://i.ibb.co/cNt98zr/1.png)
@@ -11,7 +11,7 @@ KenzieHub é um hub de gerenciamento de habilidades, nele o usuário pode se cad
 
 https://react-entrega-s2-kenzie-hub-jaquemalinoski.vercel.app/
 
-# Tecnologias / Bibliotecas Utilizadas
+# :computer: Tecnologias / Bibliotecas Utilizadas
 
 - HTML5 
 - CSS3 
