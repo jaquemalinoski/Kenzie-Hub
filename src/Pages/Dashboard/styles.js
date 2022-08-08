@@ -4,6 +4,10 @@ export const Container = styled.div `
   width: 90vw;
   margin: auto;
 
+  .plusIcon {
+    cursor: pointer;
+  }
+
   span {
     font-family: 'Inter';
     font-style: normal;

@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form"
 
 function ModalRegister ({setIsActiveModalRegister, techs, token, displayTechs}) {
 
-  const { register, handleSubmit } =useForm()
+  const { register, handleSubmit } = useForm()
 
   function onSubmit (data) {
 
@@ -21,8 +21,9 @@ function ModalRegister ({setIsActiveModalRegister, techs, token, displayTechs}) 
         }    
       }
     ).then((_) => {
-      toast.success('Technology added successfully')
       displayTechs()
+      toast.success('Technology added successfully')
+      setIsActiveModalRegister(false)
     })
     .catch((_) => toast.error(`This technology already exist`))
   }
@@ -32,7 +33,7 @@ function ModalRegister ({setIsActiveModalRegister, techs, token, displayTechs}) 
       <Container>
         <Head>
           <h4>Register Technology</h4>
-          <FiX onClick={() => setIsActiveModalRegister(false)}/>
+          <FiX onClick={() => setIsActiveModalRegister(false)} className='closeIcon'/>
         </Head>
 
         <Content onSubmit={handleSubmit(onSubmit)}>

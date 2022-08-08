@@ -48,7 +48,7 @@ function Dashboard ({ authenticated, setAuthenticated}) {
       </section>
       <section>
         <h4>Technologies</h4>
-        <FiPlus onClick={() => setIsActiveModalRegister(true)}/>
+         <FiPlus onClick={() => setIsActiveModalRegister(true)} className='plusIcon'/>
       </section>
       <Content>
         {techs.length > 0 ? (techs.map((tech) => {

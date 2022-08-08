@@ -10,6 +10,10 @@ export const Modal =  styled.div `
   background: rgba(18, 18, 20, 0.5);
   display: flex;
   justify-content: center;
+
+  .closeIcon {
+    cursor: pointer;
+  }
 `
 
 export const Container = styled.div `
@@ -56,6 +60,7 @@ export const Content = styled.form `
     color: var(--grey1);
     margin-bottom: 12px;
     margin-top: 12px;
+    cursor: pointer;
   }
 
   select:hover:focus {

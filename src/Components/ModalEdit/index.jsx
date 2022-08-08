@@ -4,6 +4,7 @@ import { FiX } from 'react-icons/fi'
 import { useForm } from "react-hook-form"
 import { useEffect } from "react"
 import api from "../../Services/api"
+import { toast } from 'react-toastify'
 
 function ModalEdit ({setIsActiveModalEdit, displayTechs, token, selectedTech}) {
   
@@ -19,7 +20,11 @@ function ModalEdit ({setIsActiveModalEdit, displayTechs, token, selectedTech}) {
     api.put(`/users/techs/${selectedTech.id}`, statusUp, {
       headers: {Authorization: `Bearer ${token}`}
     })
-    .then((_) => displayTechs())
+    .then((_) => {
+      displayTechs()
+      toast.success('Technology updated successfully')
+      setIsActiveModalEdit(false)
+    })
 
     setIsActiveModalEdit(false)
   }
@@ -29,7 +34,10 @@ function ModalEdit ({setIsActiveModalEdit, displayTechs, token, selectedTech}) {
     api.delete(`/users/techs/${id}`, {
       headers: {Authorization: `Bearer ${token}`}
     })
-    .then((_) => displayTechs())
+    .then((_) => {
+      displayTechs()
+      toast.success('Technology deleted successfully')
+    })
     
     setIsActiveModalEdit(false)
   }
@@ -39,7 +47,7 @@ function ModalEdit ({setIsActiveModalEdit, displayTechs, token, selectedTech}) {
       <Container>
         <Head>
           <h4>Edit Status</h4>
-          <FiX onClick={() => setIsActiveModalEdit(false)}/>
+          <FiX onClick={() => setIsActiveModalEdit(false)} className='closeIcon'/>
         </Head>
 
         <Content onSubmit={handleSubmit(onSubmit)}>

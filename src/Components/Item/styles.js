@@ -9,6 +9,8 @@ export const Li = styled.li `
   padding: 13px;
   display: flex;
   justify-content: space-between;
+
+  cursor: pointer;
   
   p {
     font-family: 'Inter';
