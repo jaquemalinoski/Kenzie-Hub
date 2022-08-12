@@ -9,3 +9,17 @@ KenzieHub é um hub de gerenciamento de habilidades, nele o usuário pode se cad
 # :link: Link da aplicação
 
 https://react-entrega-s2-kenzie-hub-jaquemalinoski.vercel.app/
+
+# :computer: Tecnologias / Bibliotecas Utilizadas
+
+- HTML5 
+- CSS3 
+- JavaScript 
+- React 
+- Styled-Components 
+- React Icons
+- Yup
+- React Hook Form 
+- React Toastify
+- React Router Dom
+- Axios
